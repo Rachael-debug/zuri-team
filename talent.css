@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('GraphikRegular.otf');
+}
+@font-face {
+    font-family: 'Graphik sb';
+    src: url('GraphikSemibold.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Graphik';
+    color: rgba(87, 87, 87, 0.804);
+}
+span{
+    color: #E7332B;
+}
+/* section one */
+.section-one{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+.section-one-left{
+    margin-top: 100px;
+}
+.section-one-left p{
+    max-width: 400px;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+.section-one-left-top h1{
+    font-size: 38px;
+    font-family: 'Graphik sb';
+    color: black;
+}
+.section-one-left-top img{
+    width: 100px;
+    margin-left: 400px;
+    margin-top: -50px ;
+}
+.section-one-right img{
+    width: 400px;
+}
+.section-one-buttons{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.button1{
+    border-radius: 0px 0px 10px 0px;
+    padding: 12px 46px 12px 46px;
+    font-size: 16px;
+    font-family: 'Graphik';
+    border: none;
+    background-color: #E7332B;
+    color: white;
+    box-shadow: 0px 1px 2px rgb(122, 122, 122);
+}
+.button1:hover{
+    box-shadow: 0px 1px 5px rgb(122, 122, 122);
+}
+.button2:hover{
+    box-shadow: 0px 1px 5px rgb(122, 122, 122);
+}
+.button2{
+    border-radius: 0px 0px 10px 0px;
+    padding: 12px 45px 12px 45px;
+    font-size: 16px;
+    font-family: 'Graphik';
+    border: none;
+    background-color: #505050;
+    color: white;
+    margin-left: 10px;
+    box-shadow: 0px 1px 2px rgb(122, 122, 122);
+}
+/* at media begins */
+@media (max-width: 768px){
+    .section-one{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .section-one-left-top h1{
+        max-width: 400px;
+    }
+    .section-one-left-top img{
+        margin-left: 90px;
+    }
+    .button1{
+        padding: 8px 25px 8px 25px;
+    }
+    .button2{
+        padding: 8px 25px 8px 25px;
+    }
+    .section-one-left p{
+        font-size: 16px;
+    }
+}
+/* at media ends, section one ends */
+
+/* section two begins */
+.section-two{
+    display: flex;
+    justify-content: space-around;
+    background-image: url('world-map-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin-top: 100px;
+}
+.section-two-left{
+    margin-top: 140px;
+}
+.section-two-left h1{
+    font-size: 38px;
+    font-family: 'Graphik sb';
+    color: black;
+    max-width: 480px;
+    line-height: 45px;
+}
+.section-two-left h4{
+    font-family: 'Graphik sb';
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+}
+.section-two-left p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.section-two-right img{
+    width: 400px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+.flag1, .flag2, .flag3, .flag4, .flag5{
+    width: 40px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 7px;
+}
+.flag1{
+    padding-top: 14px;
+}
+.flag3, .flag5{
+    width: 30px;
+    padding: 13px;
+}
+@media (max-width: 768px){
+    .section-two{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .section-two-left h1{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .section-two-left{
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+}
+/* at media ends, section 2 ends */
+
+/* section 3 begins */
+.section-three{
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.section-three h1{
+    font-size: 38px;
+    font-family: 'Graphik sb';
+    color: black;
+    margin-top: 40px;
+}
+.section-three-top h1{
+    max-width: 450px;
+}
+.skills, .talents{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+}
+.skills p{
+    padding: 15px 30px 15px 30px;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 17px;
+    box-shadow: 0px 3px 20px  rgba(68, 68, 68, 0.1);
+    margin-top: 40px;
+}
+.skills p:hover{
+    margin-top: 20px;
+}
+.talent p:hover{
+    margin-top: 20px;
+}
+.talents p{
+    padding: 15px 20px 15px 20px;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 17px;
+    box-shadow: 0px 3px 20px  rgba(68, 68, 68, 0.1);
+    margin-top: 40px;
+}
+/* at media begins */
+@media (max-width: 768px){
+    .section-three{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .section-three h1{
+        font-size: 28px;
+        line-height: 35px;
+        max-width: 400px;
+    }
+    .skills, .talents{
+        flex-wrap: wrap;
+    }
+}
+/* at media end, section 3 ends */
+
+/* section 4 begins */
+.section-four{
+    background-color: rgb(255, 248, 229);
+}
+.section-four h1{
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Graphik sb';
+    color: black;
+    padding-top: 100px;
+}
+.boxes{
+    width: 300px;
+    height: 220px;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 0px 0px 17px 0px;
+}
+.boxes:hover{
+    background-color: #181818;
+    color: white;
+}
+.section-boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+.boxes img{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.boxes p{
+    line-height: 25px;
+}
+.section-four-buttons{
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+/* at media begins */
+@media (max-width: 768px){
+    .section-four h1{
+        font-size: 28px;
+    }
+}
+/* at media ends, section 4 ends */
+
+/* footer begins */
+footer{
+    background-color: #181818;
+}
+.icons img{
+    width: 32px;
+    margin-left: 10px;
+}
+.icons a{
+    color: #181818;
+}
+.footer1, .footer2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    margin-left: 70px ;
+    margin-right: 70px ;
+}
+.footer2{
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 20px;
+}
+@media (max-width: 768px){
+   .footer1, .footer2{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       max-width: 1240px;
+       text-align: center;
+    }
+    .icons img{
+        margin-top: 20px;
+    }
+    .footer2 p{
+        padding-bottom: 20px;
+    }
+
+}
