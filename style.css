@@ -92,51 +92,31 @@ a:hover{
     max-width: 390px;
     margin: 0 auto;
 }
-
-
-
-.bg-1{
-    width: 100%;
-    position: absolute;
-    left: -90px;
-    top: -75px;
-    z-index: -1;
-}
-.bg-1 img{
-    width: 28%;
-    margin-top: 1127px;
-}
-.bg-2{
-    width: 100%;
-    position: absolute;
-    right: -1000px;
-    top: -75px;
-    z-index: -1;
-}
-.bg-2 img{
-    width: 28%;
-    margin-top: 1127px;
-}
 .zuri-boxes{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 70px;
 }
 .zuri-activities{
-    width: 76%;
+    width: 25%;
     padding: 35px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #FFFAFA;
+    margin: 10px;
 }
 .zuri-activities p{
     margin-top: 50px;
     line-height: 24px;
 }
-#intern{
-    margin-right: 10px;
-}
 
+@media (max-width: 990px){
+    .zuri-activities{
+        width: 90%;
+    }
+}
 
 
 @media (max-width: 768px){
