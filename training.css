@@ -275,6 +275,10 @@ header{
     display: flex;
     justify-content: space-between;
 }
+#box1{
+    background-color: #E7332B !important;
+    color: white !important;
+}
 .s3-boxes{
     display: flex;
     flex-direction: row;
